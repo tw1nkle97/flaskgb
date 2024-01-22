@@ -29,3 +29,4 @@ class Registration3Form(FlaskForm):
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     check = BooleanField('Сonsent to the processing of user data', validators=[DataRequired()])
     submit = SubmitField('Sign In')
+    
