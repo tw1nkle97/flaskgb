@@ -22,6 +22,10 @@ app = FastAPI()
 # Хранилище задач
 tasks = {}
 
+@app.get("/")
+async def read_root():
+    return {"message": "Hello World"}
+
 @app.get("/tasks", response_model=List[Task])
 async def read_tasks():
     return list(tasks.values())
