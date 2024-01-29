@@ -35,6 +35,7 @@ def init_db():
     print('OK')
 
 
+
 @app.cli.command("fill-students")
 def fill_tables():
     count = 5
